@@ -1,4 +1,4 @@
-package Karate.KarateTest;
+package Karate.KarateTest.Feature;
 import com.intuit.karate.KarateOptions;
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
@@ -21,7 +21,7 @@ public class TestRunner {
 	@Test
     public void testParallel() {
       
-        Results results = Runner.parallel(getClass(),5);
+        Results results = Runner.parallel(getClass(),3);
         generateReport(results.getReportDir());
         assertTrue(results.getErrorMessages(), results.getFailCount() == 0);        
     }

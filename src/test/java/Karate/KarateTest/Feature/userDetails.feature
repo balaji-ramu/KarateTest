@@ -1,8 +1,7 @@
-
 Feature: fetching User Details
 
 Background: 
-* def expectedOutput = read('../../com/json/values/value.json')
+* def expectedOutput = read('../Data/valueGet.json')
 
 
 Scenario: testing the get call for User Details for ID=2
