@@ -2,7 +2,7 @@ Feature: fetching User Details
 
 Background: 
 * def expectedOutput = read('../../com/json/values/value.json')
-* call sleep 20
+
 
 Scenario: testing the get call for User Details for ID=4
 Given url 'https://reqres.in/api/users/2'
